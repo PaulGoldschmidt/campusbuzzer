@@ -218,6 +218,12 @@ export default function Lobby({ setAuth }) {
           Und das alles für den niedrigen Preis von 0 Euro.
         </p>
       </div>
+      <div>
+        <h4>Von euch für euch</h4>
+        <p>
+          Diese Seite entstand innerhalb des ELPJ-1 2024 für das Jeopardy-Projekt.
+        </p>
+      </div>
     </div>
   );
 
