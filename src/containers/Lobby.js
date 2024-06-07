@@ -34,7 +34,8 @@ export default function Lobby({ setAuth }) {
   const [joinMode, setJoinMode] = useState(true);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-
+  console.log('Ein Projekt von Paul Goldschmidt, https://paul-goldschmidt.de - ein Fork des Multibuzzer-Projekts, https://github.com/wsun/multibuzzer/.');
+  console.log('Weitere Informationen zum Projekt: https://www.youtube.com/watch?v=dQw4w9WgXcQ');
   // enter room: find room, then join it
   async function enterRoom(roomId, hosting = false) {
     if (!hosting) {
