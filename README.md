@@ -1,6 +1,8 @@
 ![Docker Image Version (latest semver)](https://img.shields.io/docker/v/quantensittich/campusbuzzer)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/quantensittich/campusbuzzer/latest)
 ![Docker Pulls](https://img.shields.io/docker/pulls/quantensittich/campusbuzzer)
+![Alpine Linux Love](https://img.shields.io/badge/Alpine_Linux-0D597F?style=for-the-badge&logo=alpine-linux&logoColor=white)
+![No maitanance needed :)](http://unmaintained.tech/badge.svg)
 ## Campusbuzzer der HAW HAmburg
 
 Simple Campusbuzzer buzzer system, build ontop of [Multibuzzer](https://github.com/wsun/multibuzzer) by [wsun](https://github.com/wsun). Deployable with docker, build for the HAW Hamburg by Paul Goldschmidt as part of the ELPJ-Module in second semester of mechanical engineering. Built using Create React App and boardgame.io.
