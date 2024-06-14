@@ -1,5 +1,8 @@
 # Use an official Node.js runtime as a parent image
-FROM node:14
+FROM node:14-alpine
+
+# Install Git
+RUN apk add --no-cache git
 
 # Set the working directory in the container
 WORKDIR /app
@@ -8,6 +11,8 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
+RUN npm cache clean -f
+RUN rm -rf node_modules
 RUN npm install
 
 # Copy the rest of the application code to the working directory
