@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  campusbuzzer:
+    image: quantensittich/campusbuzzer:latest
+    restart: unless-stopped
+    container_name: campusbuzzer
+    ports:
+      - 127.0.0.1:8080:4001
