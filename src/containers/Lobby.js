@@ -215,13 +215,13 @@ export default function Lobby({ setAuth }) {
       <div>
         <h4>Gratis!</h4>
         <p>
-          Und das alles für den niedrigen Preis von 0 Euro.
+          Und das alles für den niedrigen Preis von 0 Euro - und mit der Leertaste oder einem Tap wird gebuzzered.
         </p>
       </div>
       <div>
         <h4>Von euch für euch</h4>
         <p>
-          Diese Seite entstand innerhalb des ELPJ-1 2024 für das Jeopardy-Projekt.
+          Diese Seite entstand innerhalb des ELPJ-1 2024 für das Jeopardy-Projekt. Der Sourcecode ist auf GitHub veröffentlichht.
         </p>
       </div>
     </div>
