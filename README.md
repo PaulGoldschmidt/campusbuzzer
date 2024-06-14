@@ -15,5 +15,4 @@ There is a script premade to compile and publish this project multiplatform usin
 A sample docker-compose.yml is provided in this repository.
 
 ### Prehosted game
-
 An instance of Campusbuzzer can be found on (jp.haw-hamburg.eu)[https://www.jp.haw-hamburg.eu/].
