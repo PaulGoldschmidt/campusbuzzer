@@ -1,18 +1,19 @@
-## Campusbuzzer
+## Campusbuzzer der HAW HAmburg
 
-Simple Campusbuzzer buzzer system
-
-Built using Create React App and boardgame.io
-
-Please open an issue if you experience a bug or have product feedback!
+Simple Campusbuzzer buzzer system, build ontop of (Multibuzzer)[https://github.com/wsun/multibuzzer] by (wsun)[https://github.com/wsun]. Deployable with docker, build for the HAW Hamburg by Paul Goldschmidt as part of the ELPJ-Module in second semester of mechanical engineering. Built using Create React App and boardgame.io.
 
 ### Development
 
 - Prerequisites: node and a package manager (e.g. npm, yarn)
-- Run `yarn install` to install dependencies
-- Run `yarn dev` to run local client on localhost:4000 and local server on localhost:4001
+- Run `npm install` to install dependencies
+- Run `npm dev` to run local client on localhost:4000 and local server on localhost:4001
 
-### Deployment
+### Docker build
+There is a script premade to compile and publish this project multiplatform using docker-x.
 
-- Build React app using `yarn build`
-- Run `yarn start` to run the Koa server, which will serve the built React app (via '/build'), as well as operate both the boardgame.io server and lobby
+### Docker deployment
+A sample docker-compose.yml is provided in this repository.
+
+### Prehosted game
+
+An instance of Campusbuzzer can be found on (jp.haw-hamburg.eu)[https://www.jp.haw-hamburg.eu/].
