@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { get, some, values, sortBy, orderBy, isEmpty, round } from 'lodash';
 import { Howl } from 'howler';
 import { AiOutlineDisconnect } from 'react-icons/ai';
@@ -16,21 +16,23 @@ export default function Table(game) {
   const buzzButton = useRef(null);
   const queueRef = useRef(null);
 
-  const buzzSound = new Howl({
-    src: [
-      `${process.env.PUBLIC_URL}/shortBuzz.webm`,
-      `${process.env.PUBLIC_URL}/shortBuzz.mp3`,
-    ],
-    volume: 0.5,
-    rate: 1.5,
-  });
+  const buzzSound = useMemo(() => {
+    return new Howl({
+      src: [
+        `${process.env.PUBLIC_URL}/shortBuzz.webm`,
+        `${process.env.PUBLIC_URL}/shortBuzz.mp3`,
+      ],
+      volume: 0.5,
+      rate: 1.5,
+    });
+  }, []);
 
-  const playSound = () => {
+  const playSound = useCallback(() => {
     if (sound && !soundPlayed) {
       buzzSound.play();
       setSoundPlayed(true);
     }
-  };
+  }, [sound, soundPlayed, buzzSound]);
 
   useEffect(() => {
     console.log(game.G.queue, Date.now());
@@ -62,7 +64,7 @@ export default function Table(game) {
     }
 
     queueRef.current = game.G.queue;
-  }, [game.G.queue]);
+  }, [game.G.queue, game.playerID, lastBuzz, loaded, playSound]);
 
   const attemptBuzz = () => {
     if (!buzzed) {
