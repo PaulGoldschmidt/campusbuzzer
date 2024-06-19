@@ -221,7 +221,7 @@ export default function Lobby({ setAuth }) {
       <div>
         <h4>Von euch für euch</h4>
         <p>
-          Diese Seite entstand innerhalb des ELPJ-1 2024 für das Jeopardy-Projekt. Der Sourcecode ist auf GitHub veröffentlichht.
+          Diese Seite entstand innerhalb des ELPJ-1 2024 für das Jeopardy-Projekt. Der Sourcecode ist auf <a href="https://github.com/PaulGoldschmidt/campusbuzzer">GitHub</a> veröffentlichht.
         </p>
       </div>
     </div>
